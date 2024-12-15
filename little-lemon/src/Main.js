@@ -4,7 +4,7 @@ import BookingPage from "./BookingPage";
 
 function main() {
     return (
-      <div className="Main">
+      <div className="main">
             <Routes>
                 <Route path="/HomePage" element={<HomePage />}></Route>
                 <Route path="/BookingPage" element={<BookingPage />}></Route>
