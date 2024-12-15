@@ -5,7 +5,7 @@ function footer() {
         src = "/Logo.svg"
         alt = "Little Lemon restaurant logo"
         />
-        There is supposed to be a footer!<br/>
+        2024 (C)<br/>
       </nav>
     );
   }

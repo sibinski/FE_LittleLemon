@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation {
+    display: grid;
+    place-items: center;
+    height: 60px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-menu {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img.header-logo, img.footer-logo {
+    display: block;
+    height: 8rem;
+    pointer-events: none;
+    margin: 50px auto;
+    animation: logo-spin infinite 20s linear;
+}
+
+.ReserveTable {
+    display: flex;
+    margin-left: 0px;
+    width: 150px;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .ReserveTable:hover {
+        background-color: darkorange;
+    }
+
+@media (max-width: 768px) {
+    .ReserveTable {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 90%;
+    }
+}
+
+.header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0 5%;
+}
+
+h1 {
+    color: yellow;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: medium;
+    color: greenyellow;
+    text-align: left;
+    line-height: 1.0;
+}
+
+h6 {
+    font-size: small;
+    text-align: left;
+    line-height: 1.0;
+    color: yellowgreen;
+}
+
+.Main {
+    min-height: 65vh;
+}
+
+.footer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
